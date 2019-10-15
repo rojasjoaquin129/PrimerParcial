@@ -46,3 +46,41 @@
 
 1571099654 c:\users\joaquin\parcial\informes.h
 
+1571105538 source:c:\users\joaquin\desktop\parcial nuevo\primerparcial\parcial echo por codebloks\parcial\clientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"clientes.h"
+	"utn.h"
+
+1570923519 c:\users\joaquin\desktop\parcial nuevo\primerparcial\parcial echo por codebloks\parcial\clientes.h
+
+1571104376 c:\users\joaquin\desktop\parcial nuevo\primerparcial\parcial echo por codebloks\parcial\utn.h
+
+1571099655 source:c:\users\joaquin\desktop\parcial nuevo\primerparcial\parcial echo por codebloks\parcial\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"pedidos.h"
+	"clientes.h"
+	"informes.h"
+
+1570994807 c:\users\joaquin\desktop\parcial nuevo\primerparcial\parcial echo por codebloks\parcial\pedidos.h
+
+1571099654 c:\users\joaquin\desktop\parcial nuevo\primerparcial\parcial echo por codebloks\parcial\informes.h
+
+1570995172 source:c:\users\joaquin\desktop\parcial nuevo\primerparcial\parcial echo por codebloks\parcial\pedidos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"pedidos.h"
+	"clientes.h"
+
+1571105538 source:c:\users\joaquin\desktop\parcial nuevo\primerparcial\parcial echo por codebloks\parcial\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
