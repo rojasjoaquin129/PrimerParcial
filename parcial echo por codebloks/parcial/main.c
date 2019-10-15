@@ -11,9 +11,6 @@ void CargaForzadaPedidos(aPedido *list, int len);
 int main(void) {
 	aCliente list[QTY_CLIENTES];
 	aPedido  pedidos[QTY_PEDIDOS];
-	aPedido bPedidos;
-	int posicion;
-	int auxPedido;
 	int out = 1;
 	int id = 0;
 	int assistantAdd = -1;
@@ -57,77 +54,9 @@ int main(void) {
 			}
 			break;
 		case 4:
-			printf("Alta de pedido\n");
-			if (buscarLugarLibrePedido(pedidos, QTY_PEDIDOS) == -1) {
-				printf("Error no hay mas lugar para pedidos\n");
-				break;
-			}
-			printCliente(list,QTY_CLIENTES);
-			if (getInt(&bPedidos.idCliente, "Ingrese el id del cliente\n", "Error",
-							1, 1000000, 2) == -1) {
-				printf("Error en el id\n");
-				break;
-			}
-			if(findClienteById(list,QTY_CLIENTES, bPedidos.idCliente)== -1){
-				printf("Error id del cliente inexistente");
-				break;
-			}
-			if (getInt(&bPedidos.kilos, "Ingrese la cantidad de kilos\n", "Error",
-								1, 10000000, 2) == -1) {
-				printf("Error en la cantidad de kilos\n");
-				break;
-			}
-
-			if (altaPedidoPorId(pedidos, QTY_PEDIDOS	, bPedidos) == 0) {
-							printf("pedido de recoleccion exitoso\n");
-				} else {
-					printf("Error al hacer el pedido\n");
-
-			      }
-			break;
+			altaPedidoUI(pedidos,QTY_PEDIDOS,list,QTY_CLIENTES);
 		case 5:
-			if (buscarLugarLibrePedido(pedidos, QTY_PEDIDOS) == -1) {
-				printf("Error no hay mas lugar para pedidos\n");
-				break;
-				}
-			printPedidos(pedidos,QTY_PEDIDOS);
-			if (getInt(&bPedidos.id, "Ingrese el id del pedido\n", "Error",
-							1, 100000, 2) == -1) {
-				printf("Error en el id\n");
-				break;
-			}
-			posicion=buscarPedidoPorId(pedidos,QTY_PEDIDOS, bPedidos.id);
-			if(posicion== -1){
-					printf("Error id del pedido inexistente");
-					break;
-			}
-			if (getInt(&bPedidos.HDPE, "Ingrese la cantidad de polietileno de alta densidad\n", "Error",
-										1, 1000000, 2) == -1) {
-				printf("Error en la cantidad de HDPE\n");
-				break;
-			}
-			if (getInt(&bPedidos.LDPE, "Ingrese la cantidad de polietileno de Baja densidad\n", "Error",
-													1, 1000000, 2) == -1) {
-				printf("Error en la cantidad de LDPE\n");
-				break;
-			}
-			if (getInt(&bPedidos.PP, "Ingrese la cantidad de polietileno \n", "Error\n",
-													1, 1000000, 2) == -1) {
-				printf("Error en la cantidad de PP\n");
-				break;
-			}
-			auxPedido=bPedidos.PP+bPedidos.HDPE+bPedidos.PP;
-			if(auxPedido>pedidos[posicion].kilos){
-				printf("Error en la cantidad de plastico");
-				break;
-			}
-			if (modificarPedidoporId(pedidos, QTY_PEDIDOS, bPedidos) == 0) {
-				printf("PROCESO exitoso\n");
-				} else {
-				printf("Error al hacer el PROCESO\n");
-
-			      }
-			break;
+			modificacionPedidoUI(pedidos,QTY_PEDIDOS);
 		case 6:
             printCantidadDePedidos(pedidos,QTY_PEDIDOS,list,QTY_CLIENTES);
             break;

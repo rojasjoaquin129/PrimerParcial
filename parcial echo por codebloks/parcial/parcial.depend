@@ -66,11 +66,12 @@
 	"clientes.h"
 	"informes.h"
 
-1570994807 c:\users\joaquin\desktop\parcial nuevo\primerparcial\parcial echo por codebloks\parcial\pedidos.h
+1571172465 c:\users\joaquin\desktop\parcial nuevo\primerparcial\parcial echo por codebloks\parcial\pedidos.h
+	"clientes.h"
 
 1571099654 c:\users\joaquin\desktop\parcial nuevo\primerparcial\parcial echo por codebloks\parcial\informes.h
 
-1570995172 source:c:\users\joaquin\desktop\parcial nuevo\primerparcial\parcial echo por codebloks\parcial\pedidos.c
+1571172364 source:c:\users\joaquin\desktop\parcial nuevo\primerparcial\parcial echo por codebloks\parcial\pedidos.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -83,4 +84,13 @@
 	<stdlib.h>
 	<string.h>
 	"utn.h"
+
+1571171388 source:c:\users\joaquin\desktop\parcial nuevo\primerparcial\parcial echo por codebloks\parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"pedidos.h"
+	"clientes.h"
+	"informes.h"
 

@@ -5,7 +5,7 @@
 
 #define STATUS_EMPTY 0
 #define STATUS_NOT_EMPTY 1
-
+#include "clientes.h"
 struct {
 	int id;
 	int idCliente;
@@ -18,8 +18,8 @@ struct {
 
 }typedef aPedido;
 
-
-
+int altaPedidoUI (aPedido *list ,int len , aCliente *listClientes,int length);
+int modificacionPedidoUI (aPedido *pedidos , int len);
 int ordenarPedidoPorCliente(aPedido*aArray,int cantidad);
 int modificarPedidoporId(aPedido *list, int len, aPedido item);
 int printPedidos(aPedido *list, int length);
